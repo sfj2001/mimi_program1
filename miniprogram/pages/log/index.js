@@ -6,11 +6,6 @@ Page({
     username:"",
     userpswd:""
   },
-//   commond_pswd:function()
-//   {
-//     var phone=this.data.username;
-    
-//   },
   submit:function(e)
   {
  
