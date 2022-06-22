@@ -1,15 +1,49 @@
 <!--index.wxml-->
 <!--index.wxml-->
 <view >
-    <view class="logtitle">Log In</view>
-    <view class="logwindow">
+
+    <view class="logtitle">JOIN IN</view>
+    <view class="logtitle1">注册</view>
+    <view class="body">
         <form bindsubmit="submit">
-            <text class="content">用户名：</text>
-            <input type="nickname" name="phone" class="content"  placeholder="请输入用户名"/>
-            <text class="content">密码：</text>
-            <input type="number" name="code" class="content" placeholder="请输入密码"/>
-            <button class="button" type="primary" form-type="submit">登录</button>
-            <button class="button" type="primary" >注册</button>
+            
+          <view class="section">
+            <view class="title">昵称：</view>
+            <input type="nickname" class="input" name="nickname" placeholder="昵称" />
+          </view>           
+          <view class="section">
+            <view class="title">密码</view>
+            <input type="nickname" class="input" name="code" placeholder="请记住您的密码" />
+          </view>
+          <view class="section">
+            <view class="title">确认密码：</view>
+            <input type="nickname" class="input" name="code1" placeholder="请再次输入您的密码" />
+          </view>
+            <view class="section">
+            <view class="title">性别：</view>
+              <radio-group class="mg" name="gender">
+                  <label>
+                      <radio value="nan" />
+                      男
+                  </label>
+                  <label>
+                      <radio value="nv" />
+                      女
+                  </label>
+              </radio-group>
+            </view>
+            <view class="section">
+            <view class="title">地区：（可选）</view>
+              <picker bindchange="regionChange" value="{{region}}" mode="region" level="province" class="input" name="region">
+                  <view class="picker">当前选择: {{region}}</view>
+              </picker>
+            </view>
+            <view class="section">
+            <view class="title">电话号码</view>
+            <input type="nickname" class="input" name="nickname" placeholder="您的电话号码" />
+          </view>            
+            <button class="button" type="primary" form-type="submit">注册</button>
+            <button class="button" type="primary" form-type="reset">重置</button>
         </form>
     </view>
 

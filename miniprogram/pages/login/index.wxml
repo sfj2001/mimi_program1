@@ -2,14 +2,19 @@
 <!--index.wxml-->
 <view >
     <view class="logtitle">Log In</view>
-    <view class="logwindow">
+    <view class="logtitle1">登录</view>
+    <view class="body">
         <form bindsubmit="submit">
-            <text class="content">用户名：</text>
-            <input type="nickname" name="name" class="content" value="{{name}}" placeholder="请输入用户名"/>
-            <text class="content">密码：</text>
-            <input type="number" name="code" class="content" value="{{code}}" placeholder="请输入密码"/>
+            <view class="section">
+                <view class="title">昵称：</view>
+                <input type="nickname" class="input" name="name" placeholder="昵称" />
+            </view>           
+            <view class="section">
+                <view class="title">密码</view>
+                <input type="nickname" class="input" name="code" placeholder="请记住您的密码" />
+            </view>
             <button class="button" type="primary" form-type="submit">登录</button>
-            <button class="button" type="primary" >注册</button>
+            <navigator class="change_page" url="/pages/regeistin/index">注册</navigator>
         </form>
     </view>
 

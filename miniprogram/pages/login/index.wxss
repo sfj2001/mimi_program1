@@ -14,6 +14,12 @@ page {
   margin: 20px;
   font-size: 40px;
 }
+.logtitle1{
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  color: grey;
+}
 .button{
   margin: 50px;
   padding:auto;
