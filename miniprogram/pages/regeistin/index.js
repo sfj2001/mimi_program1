@@ -8,20 +8,18 @@ Page({
   },
   submit:function(e)
   {
- 
-    //console.log(e)
     let u = e.detail.value;
-    wx.cloud.callFuction({
-        name:"logdata",
+    console.log(u);
+    wx.cloud.
+      callFunction({
+        name:"quickstartFunctions",
         data:{
-            type:"logdata",
-            ...u,
+          type:"logdata",
+          u:u
+        },success: function(res) {
+          console.log(res.result.user_id)
         }
     })
-    .then((res)=>{
-        console.log(res);
-    })
-
   },
 
   error(e) {

@@ -1,9 +1,11 @@
 <!--index.wxml-->
-<view >
-  <camera device-position="{{position}}" flash="off" binderror="error" style="width: 100%; height: 200px;"></camera>
-  <button type="primary" bindtap="change_camear_device_position">切换前后置摄像头</button>
-  <button type="primary" bindtap="takePhoto">拍照</button>
-  <button type="primary" bindtap="changeword">打印字符</button>
-  <view>{{word}}</view>
-  <image mode="widthFix" src="{{src}}"></image>
+
+<view class="pure">
+    <image class="logo" src="/images/logo.jpg" />
+    <!-- 欢迎页 -->
+    <view class="title">你好</view>
+    <view class="title">HELLO</view>
+    <view class="pure">
+        <navigator class="change_page" url="/pages/login/index">登录</navigator>
+    </view>
 </view>

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<!--index.wxml-->
+<view >
+    <view class="logtitle">Log In</view>
+    <view class="logwindow">
+        <form bindsubmit="submit">
+            <text class="content">用户名：</text>
+            <input type="nickname" name="name" class="content" value="{{name}}" placeholder="请输入用户名"/>
+            <text class="content">密码：</text>
+            <input type="number" name="code" class="content" value="{{code}}" placeholder="请输入密码"/>
+            <button class="button" type="primary" form-type="submit">登录</button>
+            <button class="button" type="primary" >注册</button>
+        </form>
+    </view>
+
+</view>

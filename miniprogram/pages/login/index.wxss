@@ -1,0 +1,36 @@
+/**index.wxss**/
+
+page {
+  padding-top: 54rpx;
+  background-color: #f6f6f6;
+  padding-bottom: 60rpx;
+}
+
+.logo{
+  size: 0ch;
+}
+.logtitle{
+  text-align: center;
+  margin: 20px;
+  font-size: 40px;
+}
+.button{
+  margin: 50px;
+  padding:auto;
+}
+.content{
+  margin: 20px;
+  padding: auto;
+  height: 30px;
+}
+.logwindow{
+  background-color: #f1f1f1;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.logplaceholder
+{
+  font-size: 20px;
+}
